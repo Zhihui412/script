@@ -2,17 +2,17 @@
 // @name         demo
 // @namespace    https://github.com/Zhihui412
 // @version      0.1
-// @description  try to take over the world!
+// @description  new script
 // @author       dosto
-// @match        *://*/*
+// @match        *://*
 // @license      AGPL-3.0
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=git-scm.com
 // @grant        none
 // ==/UserScript==
-
+ 
 (function() {
     'use strict';
-
+ 
     console.log('hello world');
     
 })();
