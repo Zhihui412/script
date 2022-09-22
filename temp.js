@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         demo
 // @namespace    https://github.com/Zhihui412
-// @version      0.1
+// @version      0.2
 // @description  new script
 // @author       dosto
 // @match        *://*
@@ -13,6 +13,6 @@
 (function() {
     'use strict';
  
-    console.log('hello world');
+    console.log('Bonjour!!!');
     
 })();
