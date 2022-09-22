@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         New script
-// @namespace    http://tampermonkey.net/
+// @name         demo
+// @namespace    https://github.com/Zhihui412
 // @version      0.1
 // @description  try to take over the world!
-// @author       Zhihui
+// @author       dosto
 // @match        *://*/*
 // @license      AGPL-3.0
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
