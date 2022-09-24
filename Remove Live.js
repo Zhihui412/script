@@ -13,12 +13,12 @@
 (() => {
     "use strict";
     //去除播放器的开关
-    let VEnable = window.localStorage.getItem("VEnable") === "true";
-    if (VEnable) {
-        setTimeout(() => {
-            document.getElementById("live-player").remove();
-        }, 3000);
-    }
+    let VEnable = false;
+    // if (VEnable) {
+    //     setTimeout(() => {
+    //         document.getElementById("live-player").remove();
+    //     }, 3000);
+    // }
     let btnArea = document.querySelector(".right-ctnr");
     let btn = document.createElement("button");
     btn.id = "removeLive";
