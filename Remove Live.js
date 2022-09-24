@@ -2,8 +2,8 @@
 // @name         Remove_Live
 // @name:zh-CN   去除B站直播间播放器
 // @namespace    https://github.com/Zhihui412
-// @version      1.0
-// @description  去除B站多余的直播播放器^ ^
+// @version      2.0
+// @description  去除B站多余的直播播放器^^
 // @author       hiuzh
 // @include      https://live.bilibili.com/*
 // @license      AGPL-3.0
@@ -12,26 +12,29 @@
 
 (() => {
     "use strict";
-    //去除播放器的开关
-    let VEnable = false;
-    // if (VEnable) {
-    //     setTimeout(() => {
-    //         document.getElementById("live-player").remove();
-    //     }, 3000);
-    // }
-    let btnArea = document.querySelector(".right-ctnr");
+    let isRemove = false;
+
+    // 定义创建按钮
     let btn = document.createElement("button");
     btn.id = "removeLive";
-    btn.textContent = VEnable ? "恢复播放器" : "移除播放器";
+    btn.textContent = isRemove ? "恢复播放器" : "移除播放器";
+
+    // 获取dom元素，插入按钮
+    let btnArea = document.querySelector(".right-ctnr");
+    btnArea.insertBefore(btn, btnArea.children[0]);
+
+    // 给按钮添加点击事件
     btn.addEventListener("click", () => {
-        VEnable = !VEnable;
-        window.localStorage.setItem("VEnable", VEnable);
-        btn.textContent = VEnable ? "恢复播放器" : "移除播放器";
-        if (VEnable) {
+        // 取反
+        isRemove = !isRemove;
+        window.localStorage.setItem("isRemove", isRemove);
+        btn.textContent = isRemove ? "恢复播放器" : "移除播放器";
+        if (isRemove) {
+            // 移除直播间播放器            
             document.getElementById("live-player").remove();
         } else {
+            // 否则重新加载页面
             window.location.reload();
         }
     });
-    btnArea.insertBefore(btn, btnArea.children[0]);
 })();
