@@ -3,7 +3,7 @@
 // @name:zh-CN   去除B站直播间播放器
 // @namespace    https://github.com/Zhihui412
 // @version      1.0
-// @description  去除B站多余的直播播放器（滑稽）
+// @description  去除B站多余的直播播放器^ ^
 // @author       hiuzh
 // @include      https://live.bilibili.com/*
 // @license      AGPL-3.0
